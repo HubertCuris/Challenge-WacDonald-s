@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WacDo : mobile version</title>
+</head>
+<body>
+  <div class="containerAll">
+    <section class="main">
+      <!--When item:hover = show promo ?-->
+      <h1>WacDo mobile version
+        <img id="logoWacDo" src="./icons/wacDo.svg" alt="logo WacDo">
+      </h1>
+      <h2>Hey,</h2>
+      <p class="pTop">what's up ?</p>
+      <section class="gridItems">
+        <div class="itemBlock gridLeft">
+          <div class="itemContent">
+            <img class="itemsBlockPics" src="./icons/burger.svg" alt="Burger">
+            <h3>Combo Meal</h3>
+            <p class="PromoText">20% off</p>   
+          </div>
+        </div>
+        <div class="itemBlock gridRight">
+          <div class="itemContent">
+            <img class="itemsBlockPics" src="./icons/cheese-burger.svg" alt="Cheeseburger">
+            <h3>Burger &</br> Sandwiches</h3>
+          </div>
+        </div>
+        <div class="itemBlock gridLeft">
+          <div class="itemContent">
+            <img class="itemsBlockPics" src="./icons/chicken-leg.svg" alt="chicken leg">
+            <h3>Chicken Leg</h3>
+          </div>
+        </div>
+        <div class="itemBlock gridRight">
+          <div class="itemContent">
+            <img class="itemsBlockPics" src="./icons/bell-pepper.svg" alt="bell pepper">
+            <h3>Bell pepper</h3>
+          </div>
+        </div>
+        <div class="itemBlock gridLeft">
+          <div class="itemContent">
+            <img class="itemsBlockPics" src="./icons/burrito.svg" alt="burrito">
+            <h3>Burrito</h3>
+          </div>
+        </div>
+        <div class="itemBlock gridRight">
+          <div class="itemContent">
+            <img class="itemsBlockPics" src="./icons/french-fries.svg" alt="French fries">
+            <h3>French fries</h3>
+          </div>
+        </div>
+      </section>
+      <h2 id="h2Popular">Popular</h2>
+      <section class="gridPopular">
+        <div class="popularBlock">
+          <img class="popPics" src="./icons/cheese-burger.svg" alt="Cheeseburger">
+          <h4>Cheese</h4>
+          <p class="popPrice">2€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics"  src="./icons/burger.svg" alt="burger">
+          <h4>Burger</h4>
+          <p class="popPrice">1€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics"  src="./icons/french-fries.svg" alt="french fries">
+          <h4>French fries</h4>
+          <p class="popPrice">4€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics" src="./icons/pizza.svg" alt="Pizza">
+          <h4>Pizza</h4>
+          <p class="popPrice">6€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics" src="./icons/chicken-leg.svg" alt="Chicken Leg">
+          <h4>Chicken Leg</h4>
+          <p class="popPrice">5€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics" src="./icons/hot-dog.svg" alt="Hot-Dog">
+          <h4>Hot-Dog</h4>
+          <p class="popPrice">4€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics" src="./icons/sandwich.svg" alt="Sandwich">
+          <h4>Sandwich</h4>
+          <p class="popPrice">4€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics" src="./icons/roast-chicken.svg" alt="Roast chicken">
+          <h4>Roast chicken</h4>
+          <p class="popPrice">5€</p>
+        </div>
+        <div class="popularBlock">
+          <img class="popPics" src="./icons/birthday-cake.svg" alt="Birthday Cake">
+          <h4>Birthday cake</h4>
+          <p class="popPrice">6€</p>
+        </div>
+      </section>
+    </section>
+    <section class="sidebar">
+      <div id="flagContainer">
+        <img id="country" src="./icons/flag.svg" alt="Country selection">
+      </div>
+      <h3 class="order">My</br>Order</h3>
+      <p style="font-size: 12px; margin-top: 10px; margin-bottom: 30px;">Take out</p>
+      <hr noshade>
+      <!-- form ? -->
+      <section>
+        <div class="cartItem">
+          <img class="cartPic" src="./icons/cheese-burger.svg" alt="cheeseburger">
+          <p class="cartTitle">Cheeseburger</p>
+          <p class="cartPrice">2€</p>
+          <div class="cartQuantityContainer">
+            <button type="button" name="button" class="cartLess">-</button>
+            <input class="cartQuantity" type="text" name="itemCartQuantity" value="1">
+            <button type="button" name="button" class="cartMore">+</button>
+          </div>
+        </div>
+        <hr noshade>
+        <div class="cartItem">
+          <img class="cartPic" src="./icons/french-fries.svg" alt="french fries">
+          <p class="cartTitle">French fries</p>
+          <p class="cartPrice">3€</p>
+          <div class="cartQuantityContainer">
+            <button type="button" name="button" class="cartLess">-</button>
+            <input class="cartQuantity" type="text" name="itemCartQuantity" value="2">
+            <button type="button" name="button" class="cartMore">+</button>
+          </div>
+        </div>
+        <hr noshade>
+        <div class="cartItem">
+          <img class="cartPic" src="./icons/pizza.svg" alt="pizza">
+          <p class="cartTitle">Pizza</p>
+          <p class="cartPrice">6€</p>
+          <div class="cartQuantityContainer">
+            <button type="button" name="button" class="cartLess">-</button>
+            <input class="cartQuantity" type="text" name="itemCartQuantity" value="1">
+            <button type="button" name="button" class="cartMore">+</button>
+          </div>
+        </div>
+      </section>
+      <section class="total">
+        <hr>
+        <p style="font-size: 12px; margin: 10px 0;">Total</p>
+        <p id="totalAmount">14 €</p>
+        <input type="submit" value="Done" id="submitBtn">
+      </section>
+    </section>
+</div>
+</body>
+</html>
