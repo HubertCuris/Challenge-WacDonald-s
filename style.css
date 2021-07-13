@@ -44,9 +44,7 @@ h2{
 .gridItems{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 2fr;
-  grid-template-areas: "gridLeft gridRight",
-  "gridLeft gridRight"
+  grid-template-rows: 1fr 1fr;
 }
 /* Items*/
 .itemBlock{
@@ -57,12 +55,12 @@ h2{
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .itemBlock:hover{
   color: white;
   background-color: #BF161D;
 }
-/* virer itemContent et set position des éléments avec relative / absolute top0 */
 .itemContent{
   padding: 10px;
   position: absolute;
@@ -94,7 +92,7 @@ h3{
 .gridPopular{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
 }
 .popularBlock{
   display: flex;
@@ -104,7 +102,7 @@ h3{
   height: 70px;
   border-radius: 10px;
   text-align: center;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin: 5px;
   position: relative;
 }
@@ -208,4 +206,81 @@ hr{
   background-color: #FFCA40;
   border: none;
   border-radius: 25px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px){
+  .itemBlock{
+    height: 110px;
+  }
+  h4{
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 900px){
+  .itemBlock{
+    margin: 10px auto;
+    height: 120px;
+    padding: 5px 0;
+    width: 70%;
+  }
+  .popularBlock{
+    height: 100px;
+  }
+  .popPics{
+    width: 25%;
+    top: 15px;
+  }
+  h4{
+    top: 50px;
+  }
+  .popPrice{
+    margin-bottom: 5px;
+  }
+  .order{
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 901px){
+  .main{
+    padding: 30px;
+    width: 85%;
+  }
+  .sidebar{
+    width: 15%;
+    padding: 0 30px;
+  }
+  #logoWacDo{
+    width: 10%;
+  }
+  .gridItems{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .itemBlock{
+    margin: 15px auto;
+    width: 70%;
+    height: 120px;
+  }
+  .gridPopular{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .popularBlock{
+    height: 120px;
+    width: 50%;
+    margin: 20px auto;
+  }
+  .popPics{
+    top: 15px;
+    margin-bottom: 40px;
+    width: 3em;
+  }
+  h4{
+    top: 60px;
+  }
+  .popPrice{
+    margin-bottom: 15px;
+  }
+  .order{
+    margin-top: 70px;
+  }
 }
